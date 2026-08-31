@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body{
+        background-color: #fff;
+        color: #000;
+      }
+
+      tbody{
+        outline: 2px solid #000;
+        border-collapse: collapse;
+      }
+
+      td{
+        width: 80px;
+        height: 80px;
+        outline: 1px solid #000;
+        text-align: center;
+      }
+
+      img{
+        width: 70px;
+        height: 70px;
+      }
+
+      #shogi{
+        background-color: rgb(235, 139, 23);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- thは列の名前 tdは値 -->
+      <table id="shogi">
+        <tbody id="board"></tbody>
+      </table>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
