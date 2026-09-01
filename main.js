@@ -209,13 +209,13 @@ function wheremove(e, n, m){
         while(a<9){
           if(a!=0) drawPoint(n-a, m+a);
           a++;
-          if(masses[m+a][n-a]) a=9;
+          if(masses[m+a][n-a] != "00") a=9;
         }
         a=0;
         while(a<-9){
           if(a!=0) drawPoint(n-a, m-a);
           a--;
-          if(masses[m-a][n-a] == "00") a=-9;
+          if(masses[m-a][n-a] != "00") a=-9;
         }
         break;
       case "飛車":
